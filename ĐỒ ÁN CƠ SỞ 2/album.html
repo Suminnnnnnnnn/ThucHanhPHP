@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="album.css">
+    <link rel="stylesheet" href="/main/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <input id="spring" type="radio" name="season" checked> Spring |
+        <input id="summer" type="radio" name="season" > Summer |
+        <input id="fall" type="radio" name="season" > Fall |
+        <input id="winter" type="radio" name="season" > Winter
+
+
+        <div id="header">
+            <i class="fa-solid fa-compact-disc fa-spin fa-3x" style="color: black;" ></i>
+            <img class="logo" src="Picture/logo.png" alt="">
+            <div style="display: inline-flex;">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="margin-left:14em ;"></i>
+            </div>
+           <div style="display: inline-flex;">
+            <input id="timkiem" type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." size="34" style="margin-left: 1em; border-radius: 60px; " >
+           </div>
+           
+        <div class="dropdown" style="margin-left: 10em; display: inline; ">
+            <button value="setting" class="dropbtn" >
+                <i class="fa-solid fa-gear" > </i>
+                </button>
+               <div id="setting" class="dropdown-content" style="margin-left: 60em;">
+                   <a href="#">Giới thiệu</a>
+                   <a href="#">Liên hệ</a>
+                   <a href="#">Quảng cáo</a>
+                   <a href="#">Thỏa thuận sử dụng</a>
+                   <a href="#">Chính sách bảo mật</a>
+               </div>
+
+        </div>
+        <div class="iconuser" style="margin-left: 5px;display: inline; ">
+            
+                <a href="html/login.html"  >
+            <i class="fa-solid fa-user" style="color: black;"></i>
+             </a>
+            
+        </div>
+        <div class="window" style="margin-left: 1em; display: inline; ">
+        
+            <a href="" style="text-decoration: none; color: black;">
+                <i class="fa-solid fa-download" style="color: black;"></i>
+                    <b>Tải bản Windows </b>
+            </a>
+          
+        </div>
+        
+        
+    
+    </div>
+        <!-- end header -->
+        <div id="main-content">
+            <div id="sidebarleft">
+                <div class="btn-group btn-group-vertical" role="group" aria-label="Vertical Button Group">
+                    <button data-href="index.html" type="button" class="btn btn-secondary" style="width: 224px ;padding:15px 0px 15px 0px;">
+                       <i class="fa-solid fa-house-chimney fa-lg" style="color: black; position: relative;right: 20px; "> </i> 
+                     <font style="color: black; font-size:larger;"> Trang chủ</font></a>         
+                        </button>
+                    <button data-href="html/musicchart.html" type="button" class="btn btn-secondary" style="width: 225px ;padding:15px 0px 15px 0px;">
+                      <i class="fa-solid fa-chart-line fa-lg" style="color: black; position: relative;right: 15px;"> </i>  
+                      <font style="color: black; font-size: larger;"> MusicChart</font>
+                    </button>
+                    <button data-href="html/radio.html" type="button" class="btn btn-secondary" style="width: 225px ;padding:15px 0px 15px 0px;">
+                        <i class="fa-solid fa-radio fa-lg" style="color: black; position: relative;right: 38px;"></i>
+                        <font style="color: black;font-size: larger;"> Radio</font>
+                    </button>
+                    <button data-href="html/thuvien.html" type="button" class="btn btn-secondary" style="width: 225px ;padding:15px 0px 15px 0px;">
+                       <i class="fa-brands fa-napster fa-xl" style="color: black; position: relative;right: 26px;"></i> 
+                       <font style="color: black;font-size: larger;"> Thư viện   </font>
+                        </button>
+                    <button data-href="html/nhacmoi.html" type="button" class="btn btn-secondary" style="width: 225px ;padding:15px 0px 15px 0px;">
+                    <i class="fa-solid fa-music fa-lg" style="color: black; position: relative;right: 25px;"></i>
+                       <font style="color: black; font-size: larger;">Nhạc mới</font>
+                    </button>
+                    <button data-href="html/theloai.html" type="button" class="btn btn-secondary" style="width: 225px ;padding:15px 0px 15px 0px;">
+                        <i class="fa-solid fa-icons fa-lg" style="color: black; position: relative;right: 28px;"></i>
+                        <font style="color: black; font-size: larger;"> Thể Loại</font>
+                        </button>
+                    <button data-href="html/top100.html" type="button" class="btn btn-secondary" style="width: 225px ;padding:15px 0px 15px 0px;">
+                        <i class="fa-solid fa-star fa-lg" style="color: black; position: relative;right: 32px;;"></i>
+                        <font style="font-size: larger; color: black;">Top 100</font>
+                       </button>
+                       <i class="fa-solid fa-guitar fa-bounce fa-5x" style="color: #9c9fa5;position: relative; left: 15px; top: 50px;"></i>
+                       <i class="fa-solid fa-drum fa-shake fa-5x" style="color:#9c9fa5;position: relative; left: 120px; bottom: 25px;"></i>
+                 </div>
+            </div>
+            <div id="content">
+                <h1>Music Player</h1>
+
+        <div class="music-container" id="music-container">
+            <div class="music-info">
+                <h4 id="title"></h4>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress" style="background-color: brown;border-radius: 5px;height: 100%;width: 0%;transition: width 0.1s linear;"></div>
+                </div>
+            </div>
+
+            <audio  src="music/Một Phút.mp3" id="audio"></audio>
+
+            <div class="img-container">
+                <img src="images/Một Phút.png" alt="music-cover" id="cover"  >
+            </div>
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play" style="color: #9c9fa5;"></i>
+                </button>
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+            </div>
+            <div id="sidebarright">
+                <center><h3><b><font style="color: #9c9fa5;position: relative; top: 10px;">BXH BÀI HÁT</font></b></h3></center>
+                <div class="btn-group" role="group" aria-label="Basic example" style="position: relative; top: 10px;">
+                    <button data-href="index.html" type="button" class="btn btn-secondary" style="width: 60px;">Việt Nam</button>
+                    <button data-href="html/aumy.html" type="button" class="btn btn-secondary" style="width: 90px;">Âu Mỹ</button>
+                    <button data-href="html/hanquoc.html"  type="button" class="btn btn-secondary" style="width: 65px;">Hàn Quốc</button>
+                    
+                 </div>
+                 <div style="display: inline-flex;">
+                    <a href=""><img src="Picture/so1.png" alt="" style="width: 80px;height: 80px; position: relative; top: 20px; ">
+                    </a> <a id="so1" href="" style="font-size: 15px; position: relative;top: 20px;left:5px; text-decoration: none;"> Không biết nên vui hay buồn</a>
+                    
+                 </div>
+                 <p style="color:#9c9fa5;position: relative;left: 85px;bottom: 10px;">Bảo Anh, Táo</p>
+                 <hr style="color:aliceblue;position: relative;bottom: 5px;">
+                 <div>
+                    <p style="color: green; position: relative;left: 7px;font-size: 20px;">2 </p>
+                 <a id="so1" href="" style="position: relative; left: 30px;bottom: 60px; text-decoration:none; font-size: 15px ;">Cô ấy của anh ấy</a>
+                 <p style="color:#9c9fa5;position: relative;left: 30px;bottom: 55px;font-size: 15px;">Bảo Anh</p>
+                 <hr style="color:aliceblue;position: relative;bottom: 50px;">
+                 </div>
+                 <div>
+                    <p style="color: green; position: relative;left: 7px;bottom:40px;font-size: 20px;">3 </p>
+                    <a id="so1" href="" style="position: relative; left: 30px;bottom: 100px; text-decoration:none; font-size: 15px ;">Nấu ăn cho em</a>
+                    <p style="color:#9c9fa5;position: relative;left: 30px;bottom: 95px;font-size: 15px;">Đen,PiaLinh</p>
+                    <hr style="color:aliceblue;position: relative;bottom: 100px;">
+   
+                 </div>
+                 <div style="position: relative;bottom: 50px;">
+                    <p style="color: green; position: relative;left: 7px;bottom:40px;font-size: 20px;">4 </p>
+                    <a id="so1" href="" style="position: relative; left: 30px;bottom: 100px; text-decoration:none; font-size: 15px ;">Đưa Em Về Nhàa</a>
+                    <p style="color:#9c9fa5;position: relative;left: 30px;bottom: 95px;font-size: 15px;">GREY D,Chillies</p>
+                    <hr style="color:aliceblue;position: relative;bottom: 100px;">
+                 </div>
+                 <div style="position: relative;bottom: 100px;">
+                    <p style="color: green; position: relative;left: 7px;bottom:40px;font-size: 20px;">5 </p>
+                    <a id="so1" href="" style="position: relative; left: 30px;bottom: 100px; text-decoration:none; font-size: 15px ;">Don't Côi</a>
+                    <p style="color:#9c9fa5;position: relative;left: 30px;bottom: 95px;font-size: 15px;">RPT Orijinn,Ronboogz</p>
+                    <hr style="color:aliceblue;position: relative;bottom: 100px;">
+                 </div>
+                 
+                 
+                 
+                 
+                 
+            </div>
+        </div> 
+        <!-- end main-content -->
+        <div id="footer">
+            <div id="end1">
+                <b style="padding-left: 20px;">HỖ TRỢ</b> <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Trợ giúp   <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Sơ đồ <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>NCCI
+                
+             </div>
+             <div id="end1" >
+                <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Liên hệ quảng cáo   <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Chính sách bảo mật <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Thỏa thuận sử dụng
+    
+             </div>
+             <div id="end1" >
+                <b style="padding-left: 20px;">SẢN PHẨM KHÁC</b> <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Mobile App   <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Smart TV <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Dektop
+             </div>
+             <div id="end1" >
+                <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Dịch vụ 3G   <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>NCT Corp <br>
+                <i class="fa-solid fa-chevron-right fa-2xs" style="padding-left: 20px; padding-right: 10px;"></i>Tuyển dụng
+            </div>
+            <div id="end1">
+                <b >LIÊN HỆ VỚI CHÚNG TÔI</b> <br>
+               <i class="fa-brands fa-facebook fa-xl"></i>
+               <i class="fa-brands fa-facebook-messenger fa-xl" style="padding-left: 20px;"></i>
+               <i class="fa-brands fa-square-instagram fa-xl" style="padding-left: 20px;"></i>
+               <i class="fa-brands fa-tiktok fa-xl " style="padding-left: 20px;"></i>
+               
+               
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+</body>
+<script>
+    /* Thêm hoặc xóa class show ra khỏi phần tử */
+    function myFunction(id) {
+            document.getElementById(id).classList.toggle("show");
+        }
+        //lấy tất cả các button menu
+        var buttons = document.getElementsByClassName('dropbtn');
+        //lấy tất cả các thẻ chứa menu con
+        var contents = document.getElementsByClassName('dropdown-content');
+        //lặp qua tất cả các button menu và gán sự kiện
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function(){
+                //lấy value của button
+                var id = this.value;
+                //ẩn tất cả các menu con đang được hiển thị
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove("show");
+                }
+                //hiển thị menu vừa được click
+                myFunction(id);
+            });
+        }
+        //nếu click ra ngoài các button thì ẩn tất cả các menu con
+        window.addEventListener("click", function(){
+             if (!event.target.matches('.dropbtn')){
+                for (var i = 0; i < contents.length; i++) {
+                    contents[i].classList.remove("show");
+                }
+             }
+        });
+</script>
+
+
+      <script>
+        const myButtons = document.querySelectorAll('.btn');
+myButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    const href = this.getAttribute('data-href');
+    window.location.href = href;
+  });
+});
+      </script>
+      <script src="main.js"></script>
+</html>
